@@ -3,6 +3,7 @@ import { AppLoading } from "expo";
 import * as Font from 'expo-font'
 import { Ionicons } from "@expo/vector-icons";
 import { StyleSheet, Text, View } from 'react-native';
+import TabNavigation from './navigation/TabNavigation';
 
 export default class App extends Component {
 
