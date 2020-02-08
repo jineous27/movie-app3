@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { AppLoading } from "expo";
 import * as Font from 'expo-font'
 import { Ionicons } from "@expo/vector-icons";
-import { StyleSheet, Text, View } from 'react-native';
-import TabNavigation from './navigation/TabNavigation';
+import MainNavigation from './navigation/MainNavigation';
 
 export default class App extends Component {
 
@@ -26,11 +25,7 @@ export default class App extends Component {
   render() {
     const { loaded } = this.state;
     if (loaded) {
-      return (
-        <View>
-          <Text> Open up App.js to start working on your app</Text>
-        </View>
-      );
+      return <MainNavigation />;
     
     } else {
       return (
